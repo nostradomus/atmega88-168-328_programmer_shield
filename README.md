@@ -14,7 +14,7 @@ After having tested one of your new marvelous ideas with an existing eco-system,
 
 The shield has been designed with EAGLE from AutoDesk/CadSoft. This shield [project](eagle-files/) can be opened with the free version [(download here)](http://www.autodesk.com/products/eagle/free-download). Only [through-hole components](BOM.md) have been used in order to make the build also feasible for any junior electronics enthusiast. In the [pdf-folder](pdf-files/) of this repo pdf versions of all important EAGLE views are available, for those not wanting to install EAGLE. Pay attention to print the bottom and top-layer layouts **without re-sizing** (1:1). To have the printed circuit board built by a commercial PCB-shop, the full  [gerber-files](gerber-files/) are also available. When etching the board at home, don't forget to add the vias, or solder pieces of wire from solder to component side.
 
-![PCB - copper side](images/copper_side-left_3D_perspective.png) ![PCB - component side](images/component_side-right_3D_perspective.png)
+[![PCB - copper side](images/copper_side-left_3D_perspective-s.png)](images/copper_side-left_3D_perspective.png) [![PCB - component side](images/component_side-right_3D_perspective-s.png)](images/component_side-right_3D_perspective.png)
 
 ## Technical details
 
@@ -46,7 +46,7 @@ CON1   | 6-pin          | SIL06        | long needle female stackable pin header
 CON2,3 | 8-pin          | SIL08        | long needle female stackable pin header strip
 CON4   | 10-pin         | SIL10        | long needle female stackable pin header strip
 
-![Component layout](images/component_layout.png)
+[![Component layout](images/component_layout-s.png)](images/component_layout.png)
 
 ### How things work
 
