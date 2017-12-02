@@ -4,7 +4,7 @@
 
 This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the ISP-programmer sketch (built-in example).
 
-![Shield - topview](images/photo-shield_only_top_view.png) ![Shield - bottomview](images/photo-shield_only_bottom_view.png)
+[![Schematic](images/schematic-s.png)](images/schematic.png) [![PCB](images/pcb-s.png)](images/pcb.png)
 
 ## Why
 
@@ -25,7 +25,7 @@ The push button, is connected to the reset lines of the AVR in the ZIF socket (a
 Three LED’s are available to visualize the correct functionality of the programming procedure.
 An optional AVR ISP connector has been foreseen in order to use the shield as stand-alone with a commercial programmer.
 
-![Shield with text annotations](images/photo-shield_with_annotations.png)
+[![Component layout](images/component_layout-s.png)](images/component_layout.png)
 
 #### BOM - bill of materials
 
@@ -45,8 +45,6 @@ S2     | toggle         | 9x4mm        | mini toggle switch
 CON1   | 6-pin          | SIL06        | long needle female stackable pin header strip
 CON2,3 | 8-pin          | SIL08        | long needle female stackable pin header strip
 CON4   | 10-pin         | SIL10        | long needle female stackable pin header strip
-
-[![Component layout](images/component_layout-s.png)](images/component_layout.png)
 
 ### How things work
 
