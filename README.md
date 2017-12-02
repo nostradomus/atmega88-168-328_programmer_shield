@@ -4,7 +4,7 @@
 
 This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the ISP-programmer sketch (built-in example).
 
-[![Schematic](images/schematic-s.png)](images/schematic.png)    [![PCB](images/pcb-s.png)](images/pcb.png)
+[![PCB - component side](images/component_side-frontal_view-s.png)](images/component_side-frontal_view.png) [![PCB - copper side](images/copper_side-frontal_view-s.png)](images/copper_side-frontal_view.png)
 
 ## Why
 
@@ -14,7 +14,7 @@ After having tested one of your new marvelous ideas with an existing eco-system,
 
 The shield has been designed with EAGLE from AutoDesk/CadSoft. This shield [project](eagle-files/) can be opened with the free version [(download here)](http://www.autodesk.com/products/eagle/free-download). Only [through-hole components](BOM.md) have been used in order to make the build also feasible for any junior electronics enthusiast. In the [pdf-folder](pdf-files/) of this repo pdf versions of all important EAGLE views are available, for those not wanting to install EAGLE. Pay attention to print the bottom and top-layer layouts **without re-sizing** (1:1). To have the printed circuit board built by a commercial PCB-shop, the full  [gerber-files](gerber-files/) are also available. When etching the board at home, don't forget to add the vias, or solder pieces of wire from solder to component side.
 
-[![PCB - copper side](images/copper_side-left_3D_perspective-s.png)](images/copper_side-left_3D_perspective.png)    [![PCB - component side](images/component_side-right_3D_perspective-s.png)](images/component_side-right_3D_perspective.png)
+[![Schematic](images/schematic-s.png)](images/schematic.png) [![PCB](images/pcb-s.png)](images/pcb.png)
 
 ## Technical details
 
