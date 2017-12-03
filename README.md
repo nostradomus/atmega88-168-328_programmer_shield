@@ -2,13 +2,13 @@
 
 ## What
 
-This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the ISP-programmer sketch (built-in example).
+This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the [ISP-programmer sketch](source/ArduinoISP.ino) (built-in example). The below shown version is targeted to µ-controllers which will run on the internal 8MHz oscillator. An alternative shield with 16MHz crystal (such as on the original Arduino Uno board) is currently in design phase.
 
 [![PCB - component side](images/component_side-frontal_view-s.png)](images/component_side-frontal_view.png) [![PCB - copper side](images/copper_side-frontal_view-s.png)](images/copper_side-frontal_view.png)
 
 ## Why
 
-After having tested one of your new marvelous ideas with an existing eco-system, a lot of airwires and a piece of breadboard, you will probably start designing a state-of-the-art custom pcb to finalize the building of your project. During such a design phase, I however got tired of wiring up the ISP connector over-and-over-again. As (like many people) I was having a spare UNO, which could serve as an ISP programmer, I decided to design a minimalistic shield to fit on top of it.  
+After having tested one of your new marvelous ideas with an existing eco-system, a lot of airwires and a piece of breadboard, you will probably start designing a state-of-the-art custom pcb to finalize the building of your project. During such a design phase, I however got tired of wiring up the ISPC connector over-and-over-again. As (like many people) I was having a spare UNO, which could serve as an [in-circuit serial programmer](https://en.wikipedia.org/wiki/In-system_programming), I decided to design a minimalistic shield to fit on top of it.  
 
 ## How
 
@@ -55,6 +55,18 @@ First the the [ISP-programmer sketch](sketches/ArduinoISP.ino) (built-in example
 To load a sketch to your atmega 𝜇-controller in the ZIF socket, make sure that the correct target board is selected in the tools-menu (you might need to download a specific library -> tools-menu, board manager). This time, use the “UPLOAD USING PROGRAMMER” option from the sketch-menu.
 
 ![Programmer selection](images/menu_Tools-Programmer.png) ![Upload Using Programmer](images/menu_Sketch-Upload_Using_Programmer.png)
+
+When using the "8MHz internal clock" shield, an [adapted board configuration](source/minimal-boards.zip) should be used (read "fuse-settings"), which can be found in the [source-folder](source/). Other versions can be found on the [Arduino website](https://www.arduino.cc/en/Tutorial/ArduinoToBreadboard) (see paragraph on minimal hardware). To install this package driver, create a "hardware" folder in the Arduino sketches folder on your computer (path to be found in the Arduino preferences),
+
+![Preferences window](images/menu_Arduino-Preferences.png)
+
+and copy the unzipped [package archive](source/minimal-boards.zip) in there.
+
+![Arduino sketches folder](images/finder_Arduino-SketchesFolder-Hardware.png)
+
+Next restart the Arduino IDE, and the required board will appear in your board's list.
+
+![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
 
 The 3 LED’s will tell you how things are going :
  - Green  : ISP programmer running
