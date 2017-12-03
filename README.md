@@ -69,9 +69,9 @@ Next restart the Arduino IDE, and the required board will appear in your board's
 ![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
 
 When loading a new sketch to the target µ-controller, the 3 LED’s will tell you how things are going :
- - Green  : ICSP programmer running (fading LED means 'idle')
- - Yellow : uploading sketch (programming code is being uploaded)
- - Red    : Error! (oops, something went wrong during the upload)
+ - Green  : **ICSP programmer running** (fading LED means 'idle')
+ - Yellow : **uploading sketch** (programming code is being uploaded)
+ - Red    : **Error!** (oops, something went wrong during the upload)
 
 ### Proof of concept
 
