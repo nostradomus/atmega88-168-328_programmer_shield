@@ -21,7 +21,7 @@ The shield has been designed with EAGLE from AutoDesk/CadSoft. This shield [proj
 ### What’s on the board
 
 The board has been fit with a narrow 28-pin [ZIF](https://en.wikipedia.org/wiki/Zero_insertion_force) socket, which is wired up to be universal for several types of AVR's. On the boarder of the PCB, pin headers with double functionality have been mounted. Pins on the bottom-side to fit on the Arduino board, and feed-through female headers on the top for easy access of all Arduino connections.
-The push button, is connected to the reset lines of the AVR in the ZIF socket (and the ISPC on the shield) with a 10kΩ pull-up resistor. When the shield is cut correctly, the reset button for the underlying Arduino UNO should still be accessible. In order to make the Arduino Uno work as an ISP programmer a 10µF capacitor needs to be connected on its reset-line.
+The push button, is connected to the reset lines of the AVR in the ZIF socket (and the ICSP on the shield) with a 10kΩ pull-up resistor. When the shield is cut correctly, the reset button for the underlying Arduino UNO should still be accessible. In order to make the Arduino Uno work as an ISP programmer a 10µF capacitor needs to be connected on its reset-line.
 Three LED’s are available to visualize the correct functionality of the programming procedure.
 An optional AVR ISP connector has been foreseen in order to use the shield as stand-alone with a commercial programmer.
 
@@ -68,10 +68,10 @@ Next restart the Arduino IDE, and the required board will appear in your board's
 
 ![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
 
-The 3 LED’s will tell you how things are going :
- - Green  : ISP programmer running
- - Yellow : uploading sketch
- - Red    : Error!  
+When loading a new sketch to the target µ-controller, the 3 LED’s will tell you how things are going :
+ - Green  : ICSP programmer running (fading LED means 'idle')
+ - Yellow : uploading sketch (programming code is being uploaded)
+ - Red    : Error! (oops, something went wrong during the upload)
 
 ### Proof of concept
 
