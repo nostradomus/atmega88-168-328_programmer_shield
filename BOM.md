@@ -1,11 +1,13 @@
 #### BOM - bill of materials
 
-Part | Value | Package | Description  
----- | ----- | ------- | -----------                            
+Part   | Value          | Package      | Description  
+------ | -------------- | ------------ | -----------                            
 R1     | 10kΩ           | 0207/7       | resistor                                            
 R2,3,4 | 470Ω           | 0204/5       | resistor                                            
 C1     | 10µF/16V       | E2,5-6E      | polarized capacitor                                 
 C2     | 100nF          | C050-025X075 | capacitor                                           
+C3,4   | 22pF           | C2.5-2       | capacitor (version with xtal-oscillator)                                          
+X1     | 16MHz          | QS           | oscillator crystal (version with xtal-oscillator)
 LED1   | 3mm yellow     | 3mm          | LED                              
 LED2   | 3mm red        | 3mm          | LED                              
 LED3   | 3mm green      | 3mm          | LED
