@@ -1,5 +1,7 @@
 # Atmega88/168/328 ISP programmer shield for Arduino UNO boards
 
+![Shield on top of the Arduino board](images/shield.png)
+
 ## What
 
 This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the [ISP-programmer sketch](source/ArduinoISP.ino) (built-in example). The below shown version is targeted to µ-controllers which will run on the internal 8MHz oscillator. An alternative shield with 16MHz crystal (such as on the original Arduino Uno board) is currently in design phase.
