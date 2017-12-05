@@ -4,7 +4,7 @@
 
 ## What
 
-This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the [ISP-programmer sketch](source/ArduinoISP.ino) (built-in example). Two versions have been included. All images in the description below, refer to the 16MHz version with an external crystal oscillator. An alternative (minimalistic) version is also available in all respective sub-folders (marked as 'minimal'). It concerns a shield to program the same µ-controllers using their 8MHz internal clock. 
+This repo provides you with all necessary info (and files) to build an Arduino shield to program [Atmel](http://www.atmel.com)'s **[atmega88/168/328](http://www.microchip.com/design-centers/8-bit/microchip-avr-mcus)** 𝜇-controllers. For that matter, the underlying Arduino board should be loaded with the [ISP-programmer sketch](source/ArduinoISP.ino) (built-in example). Two versions have been included. All images in the description below, refer to the 16MHz version with an external crystal oscillator. An alternative (minimalistic) version is also available in all respective sub-folders (marked as 'minimal'). It concerns a shield to program the same µ-controllers using their 8MHz internal clock.
 
 [![PCB - component side](images/component_side-frontal_view-s.png)](images/component_side-frontal_view.png) [![PCB - copper side](images/copper_side-frontal_view-s.png)](images/copper_side-frontal_view.png)
 
@@ -23,7 +23,7 @@ The shield has been designed with EAGLE from AutoDesk/CadSoft. This shield [proj
 ### What’s on the board
 
 The board has been fit with a narrow 28-pin [ZIF](https://en.wikipedia.org/wiki/Zero_insertion_force) socket, which is wired up to be universal for several types of AVR's. On the boarder of the PCB, pin headers with double functionality have been mounted. Pins on the bottom-side to fit on the Arduino board, and feed-through female headers on the top for easy access of all Arduino connections.
-The push button, is connected to the reset lines of the AVR in the ZIF socket (and the ICSP on the shield) with a 10kΩ pull-up resistor. When the shield is cut correctly, the reset button for the underlying Arduino UNO should still be accessible. In order to make the Arduino Uno work as an ISP programmer a 10µF capacitor needs to be connected on its reset-line.
+The push button, is connected to the reset lines of the [AVR](https://en.wikipedia.org/wiki/Atmel_AVR) in the ZIF socket (and the ICSP on the shield) with a 10kΩ pull-up resistor. When the shield is cut correctly, the reset button for the underlying Arduino UNO should still be accessible. In order to make the Arduino Uno work as an ISP programmer a 10µF capacitor needs to be connected on its reset-line.
 Three LED’s are available to visualize the correct functionality of the programming procedure.
 An optional AVR ISP connector has been foreseen in order to use the shield as stand-alone with a commercial programmer.
 
@@ -70,7 +70,7 @@ and copy the unzipped [package archive](source/minimal-boards.zip) in there.
 
 Next restart the Arduino IDE, and the required board will appear in your board's list.
 
-![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
+![Board selection](images/menu_Tools-Board-internalclock) ![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
 
 When loading a new sketch to the target µ-controller, the 3 LED’s will tell you how things are going :
  - Green  : **ICSP programmer running** (fading LED means 'idle')
