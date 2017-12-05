@@ -70,7 +70,7 @@ and copy the unzipped [package archive](source/minimal-boards.zip) in there.
 
 Next restart the Arduino IDE, and the required board will appear in your board's list.
 
-![Board selection](images/menu_Tools-Board-internalclock) ![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
+![Board selection](images/menu_Tools-Board-internalclock.png) ![Minimal board in the board selector menu](images/menu_Tools-Board-detail.png)
 
 When loading a new sketch to the target µ-controller, the 3 LED’s will tell you how things are going :
  - Green  : **ICSP programmer running** (fading LED means 'idle')
