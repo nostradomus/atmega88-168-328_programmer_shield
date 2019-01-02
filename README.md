@@ -1,6 +1,6 @@
 # Atmega88/168/328 ISP programmer shield for Arduino UNO boards
 
-![Shield on top of the Arduino board](images/shield.png)
+![Shield on top of the Arduino board](images/shield-mounted.png)
 
 ## What
 
@@ -83,23 +83,23 @@ So far, I have tested the shield with the below list of 𝜇-controllers :
 - atmega168
 - atmega328
 
- Programming should also work out well for other pin-compatible µ-controllers, such as :
+ Programming shield should also function correctly for other pin-compatible µ-controllers, such as :
  - atmega88
 
- ## Contributors
+## Contributors
 
- If you are having any good suggestions, just drop me a line [:email:](http://nostradomus.ddns.net/contactform.html).
- If feasible, I'll be happy to implement proposed improvements.
- And if you are having lots of time, I'll be happy to share the work with you ;-).
+If you are having any good suggestions, just drop me a line [:email:](http://nostradomus.ddns.net/contactform.html).
+If feasible, I'll be happy to implement any proposed improvements.
+And if you are having lots of time, I'll be happy to share the work with you ;-).
 
- When you create your own version, don't forget to send us some nice pictures of your construction. We'll be happy to publish them in the :confetti_ball:Hall of Fame:confetti_ball:.
+When you create your own version, don't forget to send us some nice pictures of your construction. We'll be happy to publish them in the :confetti_ball:Hall of Fame:confetti_ball:.
 
- ## :globe_with_meridians: License
+## :globe_with_meridians: License
 
- At this moment, there is no specific license attached to this project yet.
+At this moment, there is no specific license attached to this project.
 
- So, today, if you like it, have fun with it (at your own risk of course :-D), and especially, be creative.
+So, today, if you like it, have fun with it (at your own risk of course :-D), and especially, be creative.
 
- Oh, and when using anything from this repository, it is highly appreciated if you mention its origin.
+Oh, and when using anything from this repository, it is highly appreciated if you mention its origin.
 
- If you would like to use any of this work (or the whole project) for commercial use, first [contact us :email:](http://nostradomus.ddns.net/contactform.html), so we can add the appropriate license, which best fits your business.
+If you would like to use any of this work (or the whole project) for commercial use, first [contact us :email:](http://nostradomus.ddns.net/contactform.html), so we can add the appropriate license, which best fits your business.
