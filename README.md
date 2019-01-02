@@ -1,4 +1,5 @@
 # Atmega88/168/328 ISP programmer shield for Arduino UNO boards
+![](https://img.shields.io/badge/project%20status-released-green.svg)
 
 ![Shield on top of the Arduino board](images/shield-mounted.png)
 
