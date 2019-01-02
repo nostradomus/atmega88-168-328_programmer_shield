@@ -17,6 +17,8 @@ After having tested one of your new marvelous ideas with an existing eco-system,
 
 The shield has been designed with EAGLE from AutoDesk/CadSoft. This shield [project](eagle-files/) can be opened with the free version [(download here)](http://www.autodesk.com/products/eagle/free-download). Only [through-hole components](BOM.md) have been used in order to make the build also feasible for any junior electronics enthusiast. In the [pdf-folder](pdf-files/) of this repo pdf versions of all important EAGLE views are available, for those not wanting to install EAGLE. Pay attention to print the bottom and top-layer layouts **without re-sizing** (1:1). To have the printed circuit board built by a commercial PCB-shop, the full  [gerber-files](gerber-files/) are also available. When etching the board at home, don't forget to add the vias, or solder pieces of wire from solder to component side.
 
+Currently, unpopulated boards for both the full and minimalistic version are still available from our workshop. If interested, [contact us via   :email:](http://nostradomus.ddns.net/contactform.html).
+
 [![Schematic](images/schematic-s.png)](images/schematic.png) [![PCB](images/pcb-s.png)](images/pcb.png)
 
 ## Technical details
